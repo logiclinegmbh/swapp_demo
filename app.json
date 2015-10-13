@@ -2,6 +2,6 @@
   "name": "swapp",
   "description": "create a deploy button on Heroku",
   "repository": "https://github.com/logiclinegmbh/swapp",
-  "keywords": ["java", "heroku", "spring"],
+  "keywords": ["java", "heroku", "spring","swapp","logicline","button"],
   "addons": ["heroku-postgresql:hobby-dev"]
 }
