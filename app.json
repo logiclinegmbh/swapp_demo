@@ -1,7 +1,8 @@
 {
   "name": "swapp",
-  "description": "create a deploy button on Heroku",
+  "description": "Swapp is a template that provides a basic functionality and dynamic integration with Postgere DataBase",
   "repository": "https://github.com/logiclinegmbh/swapp",
+  "website": "https://github.com/logiclinegmbh/swapp",
   "keywords": ["java", "heroku", "spring","swapp","logicline","button"],
   "addons": ["heroku-postgresql:hobby-dev"]
 }
