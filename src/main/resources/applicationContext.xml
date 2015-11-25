@@ -12,8 +12,6 @@
      <context:annotation-config /> 
 	 <context:component-scan base-package="com.example" />
 
-
-
 	<mvc:annotation-driven />
 
 	<bean id="jspViewResolver"
@@ -31,6 +29,9 @@
 
 	</bean>
 
+	
+	<!-- you may use the default profile when running on your local machine      -->
+	<!-- make sure to edit configuration so that it suits your local environment -->
 	<beans profile="default">
 	
 		<bean id="entityManagerFactory"
@@ -60,15 +61,17 @@
 			class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 			<property name="driverClassName" value="org.postgresql.Driver" />
 			<property name="url"
-				value="jdbc:postgresql://ec2-107-21-106-196.compute-1.amazonaws.com:5432/dbf571iens8pc5?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
-			<property name="username" value="ygalfzeavjrzvu" />
-			<property name="password" value="2SBYS6BRbFiszc5AgW_sUbJyC2" />
+				value="jdbc:postgresql://localhost:5432/myDatabase?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
+			<property name="username" value="dbuser" />
+			<property name="password" value="dbpasswd" />
 		</bean>
 		
 	</beans>
 
 
 
+	<!-- the prod Profile is used when the app is deployed on heroku             -->
+	<!-- db credentials are extracted from the Heroku Env Variable "DATABASE_URL" -->
 	<beans profile="prod">
 	
 		<bean class="java.net.URI" id="dbUrl">
