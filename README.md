@@ -11,6 +11,6 @@ Click the Deploy to Heroku button below and get SWAPP now:
    <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy">
 </a>
 
-## Version
+## License
 
 Orientation is MIT licensed. See [LICENSE](LICENSE) for details.
