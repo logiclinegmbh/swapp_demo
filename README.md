@@ -10,3 +10,7 @@ Click the Deploy to Heroku button below and get SWAPP now:
 <a href="https://heroku.com/deploy?template=https://github.com/logiclinegmbh/swapp">
    <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy">
 </a>
+
+## Version
+
+Orientation is MIT licensed. See [LICENSE](LICENSE) for details.
