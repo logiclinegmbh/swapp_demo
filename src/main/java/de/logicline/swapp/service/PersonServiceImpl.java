@@ -35,7 +35,6 @@ public class PersonServiceImpl implements PersonService {
         em.persist(person);
     }
 
-    @Transactional
     public List<Person> listPeople() {
         CriteriaQuery<Person> c = em.getCriteriaBuilder().createQuery(Person.class);
         c.from(Person.class);
