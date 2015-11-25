@@ -1,9 +1,9 @@
-package com.example.service;
+package de.logicline.swapp.service;
 
 
 import java.util.List;
 
-import com.example.model.Person;
+import de.logicline.swapp.model.Person;
 
 public interface PersonService {
     

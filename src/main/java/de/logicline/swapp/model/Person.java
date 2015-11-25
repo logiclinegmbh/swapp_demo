@@ -1,4 +1,4 @@
-package com.example.model;
+package de.logicline.swapp.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
