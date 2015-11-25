@@ -28,10 +28,9 @@
 
 	<!-- Start: Header -->
 	<div id="Header">
-		<!-- Start: Logo -->
-		<img src="../img/logo.png" width="200" height="50"
-			alt="logicline demo app" />
-		<!-- End: Logo -->
+		<header>
+			<jsp:include page="../../templates/_header.html"></jsp:include>
+		</header>
 	</div>
 	<!-- End: Header -->
 
@@ -88,8 +87,8 @@
 			</div>
 		</div>
 	</div>
-	<div id="Footer">
-		Created by <a href="http://www.logicline.de" target="_blank">logicline</a>
-	</div>
+	<footer>
+		<jsp:include page="../../templates/_footer.html"></jsp:include>
+	</footer>
 </body>
 </html>
