@@ -1,9 +1,9 @@
-package com.example.service;
+package de.logicline.swapp.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.model.Person;
+import de.logicline.swapp.model.Person;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
