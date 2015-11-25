@@ -13,6 +13,18 @@ import de.logicline.swapp.service.PersonService;
 
 import java.util.Map;
 
+/**
+ * The http controller handles http client interaction
+ * <ul>
+ *    <li>delegates to the proper service (business logic)</li>
+ *    <li>delegates to the proper directs to the correct response page</li>
+ * </ul>
+ *  
+ *  (The C in MVC)
+ *  
+ * @author logicline
+ *
+ */
 @Controller
 public class PersonController {
 
