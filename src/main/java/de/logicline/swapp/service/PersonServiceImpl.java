@@ -11,6 +11,19 @@ import javax.persistence.criteria.CriteriaQuery;
 
 import java.util.List;
 
+/**
+ * 
+ * Spring Bean Implementation of the {@link PersonService}
+ * Gets the Hibernate EntityManager injected to do the ORM magic.
+ * You might consider to create an DAO (Data Access Object) Layer in order 
+ * to separate business logic (usually located in the Service Components) from 
+ * persistence logic.
+ * 
+ * (The M in MVC)
+ * 
+ * @author logicline
+ *
+ */
 @Service
 public class PersonServiceImpl implements PersonService {
 

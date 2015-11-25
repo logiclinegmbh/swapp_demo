@@ -5,6 +5,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 
+ * The person Entity.
+ * Represents the Table "Person" in the Database
+ * 
+ * @author logicline
+ *
+ */
 @Entity
 @Table(name="Person")
 public class Person {
