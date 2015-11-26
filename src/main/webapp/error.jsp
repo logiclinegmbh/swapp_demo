@@ -1,4 +1,6 @@
 <!doctype html>
+<%@ page isErrorPage="true" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <html>
 <head>
@@ -21,7 +23,7 @@
   -->
 <link href="http://heroku.github.com/template-app-bootstrap/heroku.css"
 	rel="stylesheet">
-<link href="./css/logicline.css" rel="stylesheet">
+<link href="/css/logicline.css" rel="stylesheet">
 
 <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
 <script
@@ -43,17 +45,10 @@
 			<div class="row">
 				<div class="span8 offset2">
 
-					<div style="margin-bottom: 20px">
-						Some unexpected error occoured:
-						Status Code: ${javax.servlet.error.status_code}<p>
-						Message: ${javax.servlet.error.message}<p>
-						Requested URI: ${javax.servlet.error.request_uri}<p>
-						Servlet Name: ${javax.servlet.error.servlet_name}<p>
-						
-						Status Code: ${status_code}<p>
-						Message: ${message}<p>
-						Requested URI: ${request_uri}<p>
-						Servlet Name: ${servlet_name}<p>
+					<div style="margin-top: 20px">
+						<h2>Ooops, an unexpected Error occoured!</h2>
+						Status Code:   <c:out value="${requestScope['javax.servlet.error.status_code']}"/><p>
+						Message:       <c:out value="${requestScope['javax.servlet.error.message']}"/><p>
 					</div>
 
 					<div class="tab-content"></div>

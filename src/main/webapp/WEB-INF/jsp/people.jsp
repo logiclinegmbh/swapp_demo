@@ -10,7 +10,7 @@
 
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="../img/favicon.ico"
+<link rel="shortcut icon" href="/img/favicon.ico"
 	type="image/x-icon; charset=binary" />
 
 <link
@@ -20,7 +20,7 @@
 
 <link href="http://heroku.github.com/template-app-bootstrap/heroku.css"
 	rel="stylesheet">
-<link href="../css/logicline.css" rel="stylesheet">
+<link href="/css/logicline.css" rel="stylesheet">
 
 </head>
 
@@ -29,7 +29,7 @@
 	<!-- Start: Header -->
 	<div id="Header">
 		<header>
-			<jsp:include page="../../templates/_header.html"></jsp:include>
+			<jsp:include page="/templates/_header.html"></jsp:include>
 		</header>
 	</div>
 	<!-- End: Header -->
@@ -88,7 +88,7 @@
 		</div>
 	</div>
 	<footer>
-		<jsp:include page="../../templates/_footer.html"></jsp:include>
+		<jsp:include page="/templates/_footer.html"></jsp:include>
 	</footer>
 </body>
 </html>
