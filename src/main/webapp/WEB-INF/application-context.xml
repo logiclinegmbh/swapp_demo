@@ -25,7 +25,17 @@
 
 	<!-- look here for our spring beans -->
 	<context:component-scan base-package="de.logicline.swapp" />
-
+	
+	 <!-- Tell spring where to find all those jsp pages and how o build the filename
+	      based on the controller response -->
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
 	<!-- all db based apps need a transaction manager -->
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
