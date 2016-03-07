@@ -1,3 +1,4 @@
+<%@ include file="/WEB-INF/jsp/_jspheader.jsp"%>
 <!doctype html>
 <%@ page isErrorPage="true" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -23,7 +24,8 @@
   -->
 <link href="http://heroku.github.com/template-app-bootstrap/heroku.css"
 	rel="stylesheet">
-<link href="/css/logicline.css" rel="stylesheet">
+<!-- <link href="/static/css/logicline.css" rel="stylesheet"> -->
+<link href="<c:url value="/static/css/logicline.css"/>" rel="stylesheet">
 
 <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
 <script
@@ -37,7 +39,7 @@
 	<div id="MainContainer">
 		<!-- Start: Header -->
 		<header>
-			<jsp:include page="./templates/_header.html"></jsp:include>
+			<%@ include file="_header.jsp"%>
 		</header>
 		<!-- End: Header -->
 		
@@ -58,7 +60,7 @@
 		
 		<!-- Start: Footer -->
 		<footer>
-			<jsp:include page="./templates/_footer.html"></jsp:include>
+			<%@ include file="_footer.jsp"%>
 		</footer>
 		<!-- End: Footer -->
 	</div>
