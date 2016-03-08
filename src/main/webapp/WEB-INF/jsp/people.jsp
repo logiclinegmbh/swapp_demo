@@ -19,7 +19,7 @@
 	rel="stylesheet">
 
 
-<link href="http://heroku.github.com/template-app-bootstrap/heroku.css"
+<link href="https://heroku.github.com/template-app-bootstrap/heroku.css"
 	rel="stylesheet">
 <!-- <link href="/static/css/logicline.css" rel="stylesheet"> -->
 <link href="<c:url value="/static/css/logicline.css"/>" rel="stylesheet">
