@@ -51,7 +51,7 @@
 					</div>
 					
 					<div style="margin-bottom: 20px">
-						This is a very important update to the App
+						This is a very important update to the App!
 					</div>
 
 					<div class="tab-content"></div>
