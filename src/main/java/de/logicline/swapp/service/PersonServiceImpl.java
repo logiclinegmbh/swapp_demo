@@ -1,11 +1,15 @@
 package de.logicline.swapp.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import de.logicline.swapp.model.Person;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.criteria.CriteriaQuery;
+
+import java.util.List;
 
 /**
  * 
@@ -23,18 +27,26 @@ import de.logicline.swapp.model.Person;
 @Service
 public class PersonServiceImpl implements PersonService {
 
-	List<Person> memDB = new ArrayList<Person>();
-	
+    @PersistenceContext
+    EntityManager em;
+        
+    @Transactional
     public void addPerson(Person person) {
-    	memDB.add(person);
+        em.persist(person);
     }
 
     public List<Person> listPeople() {
-    	return memDB;
+        CriteriaQuery<Person> c = em.getCriteriaBuilder().createQuery(Person.class);
+        c.from(Person.class);
+        return em.createQuery(c).getResultList();
     }
 
+    @Transactional
     public void removePerson(Integer id) {
-    	memDB.remove(id);
+        Person person = em.find(Person.class, id);
+        if (null != person) {
+            em.remove(person);
+        }
     }
     
 }

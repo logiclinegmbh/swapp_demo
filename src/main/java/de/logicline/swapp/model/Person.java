@@ -1,5 +1,9 @@
 package de.logicline.swapp.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * 
@@ -9,8 +13,12 @@ package de.logicline.swapp.model;
  * @author logicline
  *
  */
+@Entity
+@Table(name="Person")
 public class Person {
 
+    @Id
+    @GeneratedValue
     private Integer id;
 
     private String firstName;
