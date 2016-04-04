@@ -23,14 +23,14 @@ import de.logicline.swapp.model.Person;
 @Service
 public class PersonServiceImpl implements PersonService {
 
-	List<Person> memDB = new ArrayList<Person>();
-	
-    public void addPerson(Person person) {
-    	memDB.add(person);
+    private List<Person> memDB = new ArrayList<Person>();
+
+	public void addPerson(Person person) {
+		memDB.add(person);
     }
 
     public List<Person> listPeople() {
-    	return memDB;
+        return memDB ;
     }
 
     public void removePerson(Integer id) {
