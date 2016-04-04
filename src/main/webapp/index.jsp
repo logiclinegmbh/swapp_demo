@@ -49,7 +49,7 @@
 						This is a template for a web application that uses Spring MVC and
 						Hibernate (including some small jsp pages). <a href="people/" target="_self">people page</a>.
 					</div>
-
+						Hello World!!
 					<div class="tab-content"></div>
 				
 				</div>
