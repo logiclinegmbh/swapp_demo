@@ -51,7 +51,7 @@
 					</div>
 
 					<div class="tab-content"></div>
-				Hello World!!
+				
 				</div>
 			</div>
 		</div>
