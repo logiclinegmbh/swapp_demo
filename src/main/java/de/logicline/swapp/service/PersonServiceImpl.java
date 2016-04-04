@@ -24,17 +24,23 @@ import de.logicline.swapp.model.Person;
 public class PersonServiceImpl implements PersonService {
 
     private List<Person> memDB = new ArrayList<Person>();
-
+    private int lastId = 0;
+    
 	public void addPerson(Person person) {
+		System.out.println("add person with id: " + lastId);
+		person.setId(lastId++);
 		memDB.add(person);
     }
 
     public List<Person> listPeople() {
+    	System.out.println("load persons");
         return memDB ;
     }
 
     public void removePerson(Integer id) {
-    	memDB.remove(id);
+		System.out.println("remove person with index: " + id);
+
+    	memDB.remove(id.intValue()-1);
     }
     
 }

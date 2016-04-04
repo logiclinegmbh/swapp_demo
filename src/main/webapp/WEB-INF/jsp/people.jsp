@@ -54,9 +54,8 @@
 							<tr>
 								<td><form:label path="lastName">Last Name</form:label> <form:input
 										path="lastName" /></td>
-								<td><form action="delete/${person.id}" method="post">
+								<td>
 										<input type="submit" value="Add Person" class="btn" />
-									</form></td>
 							</tr>
 
 						</tbody>
