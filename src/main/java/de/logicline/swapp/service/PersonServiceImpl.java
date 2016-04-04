@@ -38,9 +38,14 @@ public class PersonServiceImpl implements PersonService {
     }
 
     public void removePerson(Integer id) {
-		System.out.println("remove person with index: " + id);
-
-    	memDB.remove(id.intValue()-1);
+		System.out.println("remove person with id: " + id);
+		
+		for (Person person : memDB) {
+			if (person.getId()==id) {
+				memDB.remove(person);
+				break;
+			}
+		}
     }
     
 }
