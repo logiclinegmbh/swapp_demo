@@ -50,7 +50,7 @@
 						Hibernate (including some small jsp pages). <a href="people/" target="_self">people page</a>.
 					</div>
 					<div class="tab-content"></div>
-				Hello World!!!
+				Moin Zusammen!
 				</div>
 			</div>
 		</div>
